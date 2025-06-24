@@ -25,9 +25,9 @@ import torch
 from peft import PeftModel
 from transformers import AutoConfig, AutoImageProcessor, AutoModelForVision2Seq, AutoProcessor
 
-from openvla_oft.prismatic.extern.hf.configuration_prismatic import OpenVLAConfig
-from openvla_oft.prismatic.extern.hf.modeling_prismatic import OpenVLAForActionPrediction
-from openvla_oft.prismatic.extern.hf.processing_prismatic import PrismaticImageProcessor, PrismaticProcessor
+from prismatic.extern.hf.configuration_prismatic import OpenVLAConfig
+from prismatic.extern.hf.modeling_prismatic import OpenVLAForActionPrediction
+from prismatic.extern.hf.processing_prismatic import PrismaticImageProcessor, PrismaticProcessor
 
 
 @dataclass
