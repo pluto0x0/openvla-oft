@@ -47,7 +47,7 @@ from experiments.robot.robot_utils import (
     normalize_gripper_action,
     set_seed_everywhere,
 )
-from prismatic.vla.constants import NUM_ACTIONS_CHUNK
+from openvla_oft.prismatic.vla.constants import NUM_ACTIONS_CHUNK
 
 
 # Define task suite constants

@@ -11,8 +11,8 @@ from torch import nn as nn
 from transformers import PhiForCausalLM
 from transformers.models.phi.modeling_phi import PhiDecoderLayer
 
-from prismatic.models.backbones.llm.base_llm import HFCausalLLMBackbone
-from prismatic.models.backbones.llm.prompting import PhiPromptBuilder, PromptBuilder
+from openvla_oft.prismatic.models.backbones.llm.base_llm import HFCausalLLMBackbone
+from openvla_oft.prismatic.models.backbones.llm.prompting import PhiPromptBuilder, PromptBuilder
 
 # Registry ==> Support Phi Models (from HF Transformers)
 # fmt: off

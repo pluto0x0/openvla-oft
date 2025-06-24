@@ -15,7 +15,7 @@ import numpy as np
 import torch
 import wandb
 
-from prismatic.overwatch import initialize_overwatch
+from openvla_oft.prismatic.overwatch import initialize_overwatch
 
 # Initialize Overwatch =>> Wraps `logging.Logger`
 overwatch = initialize_overwatch(__name__)

@@ -11,8 +11,8 @@ from torch import nn as nn
 from transformers import LlamaForCausalLM
 from transformers.models.llama.modeling_llama import LlamaDecoderLayer
 
-from prismatic.models.backbones.llm.base_llm import HFCausalLLMBackbone
-from prismatic.models.backbones.llm.prompting import (
+from openvla_oft.prismatic.models.backbones.llm.base_llm import HFCausalLLMBackbone
+from openvla_oft.prismatic.models.backbones.llm.prompting import (
     LLaMa2ChatPromptBuilder,
     PromptBuilder,
     PurePromptBuilder,

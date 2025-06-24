@@ -21,11 +21,11 @@ from timm.models.vision_transformer import LayerScale
 from transformers import AutoModelForCausalLM, PretrainedConfig, PreTrainedModel
 from transformers.modeling_outputs import ModelOutput
 
-from prismatic.training.train_utils import (
+from openvla_oft.prismatic.training.train_utils import (
     get_current_action_mask,
     get_next_actions_mask,
 )
-from prismatic.vla.constants import (
+from openvla_oft.prismatic.vla.constants import (
     ACTION_DIM,
     ACTION_PROPRIO_NORMALIZATION_TYPE,
     ACTION_TOKEN_BEGIN_IDX,

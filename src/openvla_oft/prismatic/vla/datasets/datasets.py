@@ -15,13 +15,13 @@ from PIL import Image
 from torch.utils.data import Dataset, IterableDataset
 from transformers import PreTrainedTokenizerBase
 
-from prismatic.models.backbones.llm.prompting import PromptBuilder
-from prismatic.models.backbones.vision import ImageTransform
-from prismatic.util.data_utils import tree_map
-from prismatic.vla.action_tokenizer import ActionTokenizer
-from prismatic.vla.constants import ACTION_DIM, ACTION_PROPRIO_NORMALIZATION_TYPE, ACTION_TOKEN_BEGIN_IDX, IGNORE_INDEX, NUM_ACTIONS_CHUNK, PROPRIO_DIM, STOP_INDEX
-from prismatic.vla.datasets.rlds import make_interleaved_dataset, make_single_dataset
-from prismatic.vla.datasets.rlds.oxe import OXE_NAMED_MIXTURES, get_oxe_dataset_kwargs_and_weights
+from openvla_oft.prismatic.models.backbones.llm.prompting import PromptBuilder
+from openvla_oft.prismatic.models.backbones.vision import ImageTransform
+from openvla_oft.prismatic.util.data_utils import tree_map
+from openvla_oft.prismatic.vla.action_tokenizer import ActionTokenizer
+from openvla_oft.prismatic.vla.constants import ACTION_DIM, ACTION_PROPRIO_NORMALIZATION_TYPE, ACTION_TOKEN_BEGIN_IDX, IGNORE_INDEX, NUM_ACTIONS_CHUNK, PROPRIO_DIM, STOP_INDEX
+from openvla_oft.prismatic.vla.datasets.rlds import make_interleaved_dataset, make_single_dataset
+from openvla_oft.prismatic.vla.datasets.rlds.oxe import OXE_NAMED_MIXTURES, get_oxe_dataset_kwargs_and_weights
 
 @dataclass
 class RLDSBatchTransform:

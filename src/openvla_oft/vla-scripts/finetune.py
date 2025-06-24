@@ -34,32 +34,32 @@ from experiments.robot.openvla_utils import (
     update_auto_map,
 )
 
-from prismatic.extern.hf.configuration_prismatic import OpenVLAConfig
-from prismatic.extern.hf.modeling_prismatic import OpenVLAForActionPrediction
-from prismatic.extern.hf.processing_prismatic import PrismaticImageProcessor, PrismaticProcessor
-from prismatic.models.action_heads import DiffusionActionHead, L1RegressionActionHead
-from prismatic.models.backbones.llm.prompting import PurePromptBuilder
-from prismatic.models.film_vit_wrapper import FiLMedPrismaticVisionBackbone
-from prismatic.models.projectors import (
+from openvla_oft.prismatic.extern.hf.configuration_prismatic import OpenVLAConfig
+from openvla_oft.prismatic.extern.hf.modeling_prismatic import OpenVLAForActionPrediction
+from openvla_oft.prismatic.extern.hf.processing_prismatic import PrismaticImageProcessor, PrismaticProcessor
+from openvla_oft.prismatic.models.action_heads import DiffusionActionHead, L1RegressionActionHead
+from openvla_oft.prismatic.models.backbones.llm.prompting import PurePromptBuilder
+from openvla_oft.prismatic.models.film_vit_wrapper import FiLMedPrismaticVisionBackbone
+from openvla_oft.prismatic.models.projectors import (
     NoisyActionProjector,
     ProprioProjector,
 )
-from prismatic.training.train_utils import (
+from openvla_oft.prismatic.training.train_utils import (
     compute_actions_l1_loss,
     compute_token_accuracy,
     get_current_action_mask,
     get_next_actions_mask,
 )
-from prismatic.util.data_utils import PaddedCollatorForActionPrediction
-from prismatic.vla.action_tokenizer import ActionTokenizer
-from prismatic.vla.constants import (
+from openvla_oft.prismatic.util.data_utils import PaddedCollatorForActionPrediction
+from openvla_oft.prismatic.vla.action_tokenizer import ActionTokenizer
+from openvla_oft.prismatic.vla.constants import (
     ACTION_DIM,
     ACTION_PROPRIO_NORMALIZATION_TYPE,
     NUM_ACTIONS_CHUNK,
     PROPRIO_DIM,
 )
-from prismatic.vla.datasets import RLDSBatchTransform, RLDSDataset
-from prismatic.vla.datasets.rlds.utils.data_utils import save_dataset_statistics
+from openvla_oft.prismatic.vla.datasets import RLDSBatchTransform, RLDSDataset
+from openvla_oft.prismatic.vla.datasets.rlds.utils.data_utils import save_dataset_statistics
 
 # Sane Defaults
 os.environ["TOKENIZERS_PARALLELISM"] = "false"

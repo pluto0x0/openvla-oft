@@ -10,11 +10,11 @@ from typing import Tuple, Type
 from torch.utils.data import Dataset
 from transformers import PreTrainedTokenizerBase
 
-from prismatic.conf import DatasetConfig
-from prismatic.models.backbones.llm.prompting import PromptBuilder
-from prismatic.models.backbones.vision import ImageTransform
-from prismatic.preprocessing.datasets import AlignDataset, FinetuneDataset
-from prismatic.util.data_utils import PaddedCollatorForLanguageModeling
+from openvla_oft.prismatic.conf import DatasetConfig
+from openvla_oft.prismatic.models.backbones.llm.prompting import PromptBuilder
+from openvla_oft.prismatic.models.backbones.vision import ImageTransform
+from openvla_oft.prismatic.preprocessing.datasets import AlignDataset, FinetuneDataset
+from openvla_oft.prismatic.util.data_utils import PaddedCollatorForLanguageModeling
 
 # Dataset Initializers =>> Maps Stage --> cls()
 DATASET_INITIALIZER = {"align": AlignDataset, "finetune": FinetuneDataset, "full-finetune": FinetuneDataset}

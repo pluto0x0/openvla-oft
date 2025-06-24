@@ -9,7 +9,7 @@ from typing import Dict
 
 import tensorflow as tf
 
-from prismatic.vla.datasets.rlds.utils.data_utils import tree_merge
+from openvla_oft.prismatic.vla.datasets.rlds.utils.data_utils import tree_merge
 
 
 def uniform(traj: Dict) -> Dict:

@@ -29,10 +29,10 @@ from huggingface_hub import hf_hub_download
 from timm.models.vision_transformer import LayerScale
 from transformers import AutoTokenizer
 
-from prismatic.conf import ModelConfig
-from prismatic.extern.hf.configuration_prismatic import OpenVLAConfig
-from prismatic.extern.hf.modeling_prismatic import OpenVLAForActionPrediction
-from prismatic.extern.hf.processing_prismatic import PrismaticImageProcessor, PrismaticProcessor
+from openvla_oft.prismatic.conf import ModelConfig
+from openvla_oft.prismatic.extern.hf.configuration_prismatic import OpenVLAConfig
+from openvla_oft.prismatic.extern.hf.modeling_prismatic import OpenVLAForActionPrediction
+from openvla_oft.prismatic.extern.hf.processing_prismatic import PrismaticImageProcessor, PrismaticProcessor
 
 
 @dataclass

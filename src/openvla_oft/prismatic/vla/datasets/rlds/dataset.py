@@ -15,11 +15,11 @@ import numpy as np
 import tensorflow as tf
 import tensorflow_datasets as tfds
 
-from prismatic.overwatch import initialize_overwatch
-from prismatic.vla.constants import ACTION_DIM, ACTION_PROPRIO_NORMALIZATION_TYPE, ACTION_TOKEN_BEGIN_IDX, IGNORE_INDEX, NUM_ACTIONS_CHUNK, PROPRIO_DIM, STOP_INDEX
-from prismatic.vla.datasets.rlds import obs_transforms, traj_transforms
-from prismatic.vla.datasets.rlds.utils import goal_relabeling, task_augmentation
-from prismatic.vla.datasets.rlds.utils.data_utils import (
+from openvla_oft.prismatic.overwatch import initialize_overwatch
+from openvla_oft.prismatic.vla.constants import ACTION_DIM, ACTION_PROPRIO_NORMALIZATION_TYPE, ACTION_TOKEN_BEGIN_IDX, IGNORE_INDEX, NUM_ACTIONS_CHUNK, PROPRIO_DIM, STOP_INDEX
+from openvla_oft.prismatic.vla.datasets.rlds import obs_transforms, traj_transforms
+from openvla_oft.prismatic.vla.datasets.rlds.utils import goal_relabeling, task_augmentation
+from openvla_oft.prismatic.vla.datasets.rlds.utils.data_utils import (
     allocate_threads,
     get_dataset_statistics,
     normalize_action_and_proprio,

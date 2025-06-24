@@ -9,7 +9,7 @@ Reference: https://huggingface.co/blog/llama2#how-to-prompt-llama-2
 
 from typing import Optional
 
-from prismatic.models.backbones.llm.prompting.base_prompter import PromptBuilder
+from openvla_oft.prismatic.models.backbones.llm.prompting.base_prompter import PromptBuilder
 
 # Default System Prompt for Prismatic Models
 SYS_PROMPTS = {

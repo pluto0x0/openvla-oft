@@ -2,7 +2,7 @@
 dinov2_vit.py
 """
 
-from prismatic.models.backbones.vision.base_vision import TimmViTBackbone
+from openvla_oft.prismatic.models.backbones.vision.base_vision import TimmViTBackbone
 
 # Registry =>> Supported DINOv2 Vision Backbones (from TIMM) =>> Note:: Using DINOv2 w/ Registers!
 #   => Reference: https://arxiv.org/abs/2309.16588

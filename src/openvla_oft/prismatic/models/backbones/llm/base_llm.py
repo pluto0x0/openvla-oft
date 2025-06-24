@@ -23,8 +23,8 @@ from torch.distributed.fsdp.wrap import transformer_auto_wrap_policy
 from transformers import AutoConfig, AutoTokenizer, PreTrainedModel, PreTrainedTokenizerBase
 from transformers.modeling_outputs import CausalLMOutputWithPast
 
-from prismatic.models.backbones.llm.prompting import PromptBuilder
-from prismatic.overwatch import initialize_overwatch
+from openvla_oft.prismatic.models.backbones.llm.prompting import PromptBuilder
+from openvla_oft.prismatic.overwatch import initialize_overwatch
 
 # Suppress HF Deprecation Warnings
 warnings.filterwarnings("ignore", category=FutureWarning)

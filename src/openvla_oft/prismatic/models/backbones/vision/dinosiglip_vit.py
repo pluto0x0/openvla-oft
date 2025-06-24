@@ -15,7 +15,7 @@ from timm.models.vision_transformer import Block, VisionTransformer
 from torch.distributed.fsdp.wrap import _module_wrap_policy, _or_policy, transformer_auto_wrap_policy
 from torchvision.transforms import Compose, Resize
 
-from prismatic.models.backbones.vision.base_vision import ImageTransform, LetterboxPad, VisionBackbone, unpack_tuple
+from openvla_oft.prismatic.models.backbones.vision.base_vision import ImageTransform, LetterboxPad, VisionBackbone, unpack_tuple
 
 # Registry =>> Supported DinoSigLIP Pairs (as TIMM identifiers)
 DINOSigLIP_VISION_BACKBONES = {

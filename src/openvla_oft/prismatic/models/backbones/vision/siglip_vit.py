@@ -2,7 +2,7 @@
 siglip_vit.py
 """
 
-from prismatic.models.backbones.vision.base_vision import TimmViTBackbone
+from openvla_oft.prismatic.models.backbones.vision.base_vision import TimmViTBackbone
 
 # Registry =>> Supported SigLIP Vision Backbones (from TIMM) =>> Note:: Using SigLIP w/ Patch = 14 (but SO400M Arch)
 SIGLIP_VISION_BACKBONES = {

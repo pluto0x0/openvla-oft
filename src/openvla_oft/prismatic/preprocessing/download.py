@@ -15,7 +15,7 @@ from PIL import Image
 from rich.progress import BarColumn, DownloadColumn, MofNCompleteColumn, Progress, TextColumn, TransferSpeedColumn
 from tqdm import tqdm
 
-from prismatic.overwatch import initialize_overwatch
+from openvla_oft.prismatic.overwatch import initialize_overwatch
 
 # Initialize Overwatch =>> Wraps `logging.Logger`
 overwatch = initialize_overwatch(__name__)

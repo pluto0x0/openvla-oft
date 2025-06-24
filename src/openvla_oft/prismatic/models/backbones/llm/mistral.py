@@ -11,8 +11,8 @@ from torch import nn as nn
 from transformers import MistralForCausalLM
 from transformers.models.mistral.modeling_mistral import MistralDecoderLayer
 
-from prismatic.models.backbones.llm.base_llm import HFCausalLLMBackbone
-from prismatic.models.backbones.llm.prompting import MistralInstructPromptBuilder, PromptBuilder, PurePromptBuilder
+from openvla_oft.prismatic.models.backbones.llm.base_llm import HFCausalLLMBackbone
+from openvla_oft.prismatic.models.backbones.llm.prompting import MistralInstructPromptBuilder, PromptBuilder, PurePromptBuilder
 
 # Registry =>> Support Mistral Models (from HF Transformers)
 # fmt: off

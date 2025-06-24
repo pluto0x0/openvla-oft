@@ -19,22 +19,22 @@ from torch.utils.data import DataLoader, Dataset, DistributedSampler, IterableDa
 from tqdm import tqdm
 from transformers.modeling_outputs import CausalLMOutputWithPast
 
-from prismatic.models.vlms import PrismaticVLM
-from prismatic.overwatch import initialize_overwatch
-from prismatic.training.metrics import Metrics, VLAMetrics
-from prismatic.training.train_utils import (
+from openvla_oft.prismatic.models.vlms import PrismaticVLM
+from openvla_oft.prismatic.overwatch import initialize_overwatch
+from openvla_oft.prismatic.training.metrics import Metrics, VLAMetrics
+from openvla_oft.prismatic.training.train_utils import (
     compute_actions_l1_loss,
     compute_token_accuracy,
     get_current_action_mask,
     get_next_actions_mask,
 )
-from prismatic.util import check_bloat16_supported
-from prismatic.util.batching_utils import SplitModalitySampler
-from prismatic.util.data_utils import PaddedCollatorForActionPrediction, PaddedCollatorForLanguageModeling
-from prismatic.vla.action_tokenizer import ActionTokenizer
+from openvla_oft.prismatic.util import check_bloat16_supported
+from openvla_oft.prismatic.util.batching_utils import SplitModalitySampler
+from openvla_oft.prismatic.util.data_utils import PaddedCollatorForActionPrediction, PaddedCollatorForLanguageModeling
+from openvla_oft.prismatic.vla.action_tokenizer import ActionTokenizer
 
 # HuggingFace Default / LLaMa-2 IGNORE_INDEX (for labels)
-from prismatic.vla.constants import ACTION_DIM, ACTION_TOKEN_BEGIN_IDX, NUM_ACTIONS_CHUNK, IGNORE_INDEX
+from openvla_oft.prismatic.vla.constants import ACTION_DIM, ACTION_TOKEN_BEGIN_IDX, NUM_ACTIONS_CHUNK, IGNORE_INDEX
 NEWLINE_INDEX = 13  # '\n'
 STOP_INDEX = 2  # '</s>'
 

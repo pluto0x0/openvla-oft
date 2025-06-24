@@ -14,8 +14,8 @@ import numpy as np
 import tensorflow as tf
 from tqdm import tqdm
 
-from prismatic.overwatch import initialize_overwatch
-from prismatic.vla.constants import NormalizationType
+from openvla_oft.prismatic.overwatch import initialize_overwatch
+from openvla_oft.prismatic.vla.constants import NormalizationType
 
 # Initialize Overwatch =>> Wraps `logging.Logger`
 overwatch = initialize_overwatch(__name__)

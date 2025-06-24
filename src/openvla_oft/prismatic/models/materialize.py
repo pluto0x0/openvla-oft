@@ -9,8 +9,8 @@ from typing import Optional, Tuple
 
 from transformers import PreTrainedTokenizerBase
 
-from prismatic.models.backbones.llm import LLaMa2LLMBackbone, LLMBackbone, MistralLLMBackbone, PhiLLMBackbone
-from prismatic.models.backbones.vision import (
+from openvla_oft.prismatic.models.backbones.llm import LLaMa2LLMBackbone, LLMBackbone, MistralLLMBackbone, PhiLLMBackbone
+from openvla_oft.prismatic.models.backbones.vision import (
     CLIPViTBackbone,
     DinoCLIPViTBackbone,
     DinoSigLIPViTBackbone,
@@ -20,7 +20,7 @@ from prismatic.models.backbones.vision import (
     SigLIPViTBackbone,
     VisionBackbone,
 )
-from prismatic.models.vlms import PrismaticVLM
+from openvla_oft.prismatic.models.vlms import PrismaticVLM
 
 # === Registries =>> Maps ID --> {cls(), kwargs} :: Different Registries for Vision Backbones, LLM Backbones, VLMs ===
 # fmt: off

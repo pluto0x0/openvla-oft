@@ -2,7 +2,7 @@
 
 import torch
 
-from prismatic.vla.constants import ACTION_DIM, ACTION_TOKEN_BEGIN_IDX, IGNORE_INDEX
+from openvla_oft.prismatic.vla.constants import ACTION_DIM, ACTION_TOKEN_BEGIN_IDX, IGNORE_INDEX
 
 
 def get_current_action_mask(token_ids):

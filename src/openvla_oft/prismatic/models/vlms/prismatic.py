@@ -20,12 +20,12 @@ from PIL import Image
 from torch.distributed.fsdp.wrap import _module_wrap_policy, _or_policy
 from transformers.modeling_outputs import CausalLMOutputWithPast
 
-from prismatic.models.backbones.llm import LLMBackbone
-from prismatic.models.backbones.llm.prompting import PromptBuilder
-from prismatic.models.backbones.vision import VisionBackbone
-from prismatic.models.vlms.base_vlm import VLM
-from prismatic.overwatch import initialize_overwatch
-from prismatic.util.nn_utils import FusedMLPProjector, LinearProjector, MLPProjector
+from openvla_oft.prismatic.models.backbones.llm import LLMBackbone
+from openvla_oft.prismatic.models.backbones.llm.prompting import PromptBuilder
+from openvla_oft.prismatic.models.backbones.vision import VisionBackbone
+from openvla_oft.prismatic.models.vlms.base_vlm import VLM
+from openvla_oft.prismatic.overwatch import initialize_overwatch
+from openvla_oft.prismatic.util.nn_utils import FusedMLPProjector, LinearProjector, MLPProjector
 
 # Initialize Overwatch =>> Wraps `logging.Logger`
 overwatch = initialize_overwatch(__name__)

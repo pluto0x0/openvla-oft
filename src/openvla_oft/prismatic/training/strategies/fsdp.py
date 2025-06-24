@@ -29,9 +29,9 @@ from torch.distributed.fsdp import FullyShardedDataParallel as FSDP
 from torch.optim import AdamW
 from transformers.optimization import get_constant_schedule, get_cosine_schedule_with_warmup
 
-from prismatic.models.vlms import PrismaticVLM
-from prismatic.overwatch import initialize_overwatch
-from prismatic.training.strategies.base_strategy import TrainingStrategy
+from openvla_oft.prismatic.models.vlms import PrismaticVLM
+from openvla_oft.prismatic.overwatch import initialize_overwatch
+from openvla_oft.prismatic.training.strategies.base_strategy import TrainingStrategy
 
 # Initialize Overwatch =>> Wraps `logging.Logger`
 overwatch = initialize_overwatch(__name__)

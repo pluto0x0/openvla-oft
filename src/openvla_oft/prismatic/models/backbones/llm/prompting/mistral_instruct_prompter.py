@@ -8,7 +8,7 @@ Reference: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.1#instruction
 
 from typing import Optional
 
-from prismatic.models.backbones.llm.prompting.base_prompter import PromptBuilder
+from openvla_oft.prismatic.models.backbones.llm.prompting.base_prompter import PromptBuilder
 
 
 class MistralInstructPromptBuilder(PromptBuilder):

@@ -2,7 +2,7 @@
 clip_vit.py
 """
 
-from prismatic.models.backbones.vision.base_vision import TimmViTBackbone
+from openvla_oft.prismatic.models.backbones.vision.base_vision import TimmViTBackbone
 
 # Registry =>> Supported CLIP Vision Backbones (from TIMM)
 CLIP_VISION_BACKBONES = {

@@ -8,7 +8,7 @@ Reference: https://huggingface.co/lmsys/vicuna-13b-v1.5
 
 from typing import Optional
 
-from prismatic.models.backbones.llm.prompting.base_prompter import PromptBuilder
+from openvla_oft.prismatic.models.backbones.llm.prompting.base_prompter import PromptBuilder
 
 # Default System Prompt for LLaVa Models
 SYS_PROMPTS = {

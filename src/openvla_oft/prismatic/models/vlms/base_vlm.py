@@ -22,9 +22,9 @@ import torch.nn as nn
 from transformers import GenerationMixin, PretrainedConfig
 from transformers.modeling_outputs import CausalLMOutputWithPast
 
-from prismatic.models.backbones.llm import LLMBackbone
-from prismatic.models.backbones.llm.prompting import PromptBuilder
-from prismatic.models.backbones.vision import VisionBackbone
+from openvla_oft.prismatic.models.backbones.llm import LLMBackbone
+from openvla_oft.prismatic.models.backbones.llm.prompting import PromptBuilder
+from openvla_oft.prismatic.models.backbones.vision import VisionBackbone
 
 
 # === Abstract Base Class for arbitrary Vision-Language Models ===
