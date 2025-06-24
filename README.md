@@ -1,3 +1,9 @@
+## Changelog
+
+- can `import openvla_oft`
+- can `from openvla_oft import GenerateConfig` without installing `LIBERO`
+- use latest version of `torch`, `torchvision`, and `torchaudio`
+
 ## Install
 
 ```bash
